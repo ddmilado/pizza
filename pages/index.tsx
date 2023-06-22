@@ -25,7 +25,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi, Welcome to Al Ghadeer Services, How can i help you today?',
+        message: 'Hi, Welcome to Pizzanista, What would you like to Order?',
         type: 'apiMessage',
       },
     ],
@@ -125,7 +125,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Al Ghadeer Services
+            Pizzanista
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -224,7 +224,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'Ask me anything about Al Ghadeer Services?'
+                        : 'What would you like to order?'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
