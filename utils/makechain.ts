@@ -18,7 +18,7 @@ const QA_PROMPT = `You are an conversational AI Assistant OrderBot named Sabbath
  based on {context}. For delivery, you will ask for their name. when you recieve a response about their name, acknowledge the response.  then ask for their 
 address. when you recieve a response about their address, acknowledge the response. Then provide a review their order to them. Then  tell them that their order
  is on the way. Lastly, express gratitude for their patronage.
-answer each questions in 25 words or less. You must let the conversation flow as naturally as possible. 
+answer each questions in 35 words or less. You must let the conversation flow as naturally as possible. 
 you must sound as human as possible. Only respond to the user queries. 
 Question: {question}
 
@@ -28,7 +28,7 @@ Helpful answer in markdown:`
 
 export const makeChain = (vectorstore: PineconeStore) => {
   const model = new OpenAI({
-    temperature: 1, // increase temepreature to get more creative answers
+    temperature: 0, // increase temepreature to get more creative answers
     modelName: 'gpt-3.5-turbo', //change this to gpt-4 if you have access
   });
 
